@@ -1,0 +1,160 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main()
+        {
+
+            // Example 1
+
+
+            /*
+             
+            int Number = 4;
+            switch (Number)
+            {
+                case 1:
+                    Console.WriteLine("one");
+                    Console.ReadLine();
+                    break;
+                case 2:
+                    Console.WriteLine("two");
+                    Console.ReadLine();
+                    break;
+                case 3:
+                    Console.WriteLine("three");
+                    Console.ReadLine();
+                    break;
+                default:
+                    Console.WriteLine("Number not recognised");
+                    Console.ReadLine();
+                    break; 
+
+            */
+
+
+
+
+            //Example 2
+
+
+
+            /*
+
+                   switch (DateTime.Now.DayOfWeek)
+                    {
+                    case DayOfWeek.Friday:
+                    Console.WriteLine("Today is Friday");
+                    Console.ReadLine();
+                    break;
+                    case DayOfWeek.Wednesday:
+                    Console.WriteLine("Today is Wednesday");
+                    Console.ReadLine();
+                    break;
+                    }
+                 
+                   */
+
+
+
+
+            // Example 3
+
+            /*
+            int number1;
+            Console.Write("Please enter number one:");
+            number1 = int.Parse(Console.ReadLine());
+            char symbol;
+            Console.Write("enter symbol:");
+            symbol = char.Parse(Console.ReadLine());
+            int number2;
+            Console.Write("Please enter number two:");
+            number2 = int.Parse(Console.ReadLine());
+            int result;
+            switch (symbol)
+            {
+            case '+':
+
+                    result = number1 + number2;
+                    Console.Write("resualt: " + "{0} + {1} = {2}", number1,
+                    number2, result);
+
+                break;
+            case '-':
+
+                    result = number1 - number2;
+                    Console.Write("resualt: " + "{0} - {1} = {2}", number1,
+                    number2, result);
+
+                break;
+            case '*':
+
+                    result = number1 * number2;
+                    Console.Write("resualt: " + "{0} * {1} = {2}", number1,
+                    number2, result);
+
+                break;
+            case '/':
+
+                    result = number1 / number2;
+                    Console.Write("resualt: " + "{0} / {1} = {2}", number1,
+                    number2, result);
+
+                break;
+        default:
+            Console.WriteLine("Invailed symbol");
+            Console.ReadLine();
+            break;
+            }
+            Console.ReadLine();
+
+                              
+    */
+
+            // Example 4 
+
+            /*
+
+            Console.WriteLine("Coffee sizes: 1=small 2=medium 3=large");
+            Console.Write("Please enter your selection: ");
+            string str = Console.ReadLine();
+            int cost = 0;
+
+            // Because of the goto statements in cases 2 and 3, the base cost of 25
+            // cents is added to the additional cost for the medium and large sizes.
+            switch (str)
+            {
+            case "1":
+            case "small":
+            cost += 25;
+            break;
+            case "2":
+            case "medium":
+            cost += 25;
+            goto case "1";
+            case "3":
+            case "large":
+            cost += 50;
+            goto case "1";
+            default:
+            Console.WriteLine("Invalid selection. Please select 1, 2, or 3.");
+            break;
+            }
+            if (cost != 0)
+            {
+            Console.WriteLine("Please insert {0} cents.", cost);
+            }
+            Console.WriteLine("Thank you for your business.");
+
+            */
+
+
+
+        }
+
+    }
+    }
+
+
